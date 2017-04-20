@@ -1,0 +1,28 @@
+{
+  "name": "szdiy-meetup-server",
+  "version": "0.0.1",
+  "description": "Server backend for SZDIY-meetup project",
+  "main": "app.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szdiy/szdiy-meetup.git"
+  },
+  "keywords": [
+    "szdiy"
+  ],
+  "author": "SZDIY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szdiy/szdiy-meetup/issues"
+  },
+  "homepage": "https://github.com/szdiy/szdiy-meetup#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
