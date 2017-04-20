@@ -1,0 +1,22 @@
+{
+  "name": "szdiy-meetup",
+  "version": "0.0.1",
+  "description": "Frontend for szdiy-meetup",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szdiy/szdiy-meetup.git"
+  },
+  "keywords": [
+    "szdiy"
+  ],
+  "author": "SZDIY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szdiy/szdiy-meetup/issues"
+  },
+  "homepage": "https://github.com/szdiy/szdiy-meetup#readme"
+}
