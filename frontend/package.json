@@ -1,11 +1,9 @@
 {
   "name": "szdiy-meetup",
-  "version": "0.0.1",
   "description": "Frontend for szdiy-meetup",
-  "main": "index.js",
-  "scripts": {
-    "test": "gulp"
-  },
+  "private": true,
+  "author": "SZDIY",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/szdiy/szdiy-meetup.git"
@@ -13,10 +11,26 @@
   "keywords": [
     "szdiy"
   ],
-  "author": "SZDIY",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/szdiy/szdiy-meetup/issues"
   },
-  "homepage": "https://github.com/szdiy/szdiy-meetup#readme"
+  "homepage": "https://github.com/szdiy/szdiy-meetup#readme",
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "dependencies": {
+    "react": "^15.4",
+    "react-dom": "^15.4"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "^2",
+    "babel-brunch": "~6.0",
+    "babel-preset-latest": "^6",
+    "babel-preset-react": "~6.22",
+    "brunch": "^2",
+    "clean-css-brunch": "^2",
+    "sass-brunch": "^2.10.4",
+    "uglify-js-brunch": "^2"
+  }
 }
