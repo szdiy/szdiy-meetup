@@ -7,6 +7,11 @@ import Api from "./utils/api";
 
 let app = express();
 
+// set view template engine
+app.set('view engine', 'jade');
+app.set('views', './views');
+
+// other settings
 app.use(logger('dev'));
 app.use(BodyParser.json());
 app.use(BodyParser.urlencoded({ extended: false }));
@@ -23,9 +28,9 @@ app.use((req, res, next) => {
 });
 
 app.use((err, req, res, next) => {
-  let status = err.status || 500;
+  let status = err.status || Api.Codes.SERVER_ERROR;
   res.status(status);
-  res.send(Api.response(status, {
+  res.send(Api.toResponse(status, {
       message: err.message,
       error: (app.get('env') === 'dev') ? err : {}
   }));
