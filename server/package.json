@@ -24,8 +24,9 @@
     "body-parser": "^1.17.1",
     "cookie-parser": "^1.4.3",
     "express": "^4.15.2",
-    "jade": "^1.11.0",
+    "moment": "^2.18.1",
     "morgan": "^1.8.1",
+    "pug": "^2.0.0-rc.1",
     "sequelize": "^3.30.4"
   },
   "devDependencies": {

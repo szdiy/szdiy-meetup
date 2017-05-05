@@ -8,7 +8,7 @@ import Api from "./utils/api";
 let app = express();
 
 // set view template engine
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 app.set('views', './views');
 
 // other settings

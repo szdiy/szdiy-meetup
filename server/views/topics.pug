@@ -1,0 +1,19 @@
+extends common/layout.pug
+
+block content
+
+    h1 SZDIY Meetup Topics
+
+    div
+      a(href="topic/new") Add Topic
+
+
+    h3 Topic List
+
+    ul
+      if topics && topics.length > 0
+        each topic in topics
+          li= topic.title
+      else
+        li No topics currently.
+          
