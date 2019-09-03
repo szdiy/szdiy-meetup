@@ -5,7 +5,7 @@ block content
     h1 SZDIY Meetup Topics
 
     div
-      a(href="topic/new") Add Topic
+      a(href="../topic/new") Add Topic
 
 
     h3 Topic List
@@ -13,7 +13,8 @@ block content
     ul
       if topics && topics.length > 0
         each topic in topics
-          li= topic.title
+          li 
+            a(href="../topic/"+topic.id)= topic.title
       else
         li No topics currently.
           

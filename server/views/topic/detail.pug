@@ -1,0 +1,18 @@
+extends ../common/layout.pug
+
+block content
+
+  header
+    h3 主题： #{topic.title}
+
+  section 
+    h3 介绍:
+    div= topic.summary
+
+  hr
+
+  section
+    p
+      a(href="../topics/") Back
+      a(href=topic.id + "/edit") Edit
+      a(href=topic.id + "/delete") Delete

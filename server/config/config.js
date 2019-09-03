@@ -7,7 +7,7 @@ let dev = {
   },
 
   site: {
-    port: 3000,
+    port: 5000,
   },
 }
 

@@ -1,0 +1,10 @@
+
+form(method='post')
+
+  p: label(for="name") Title:
+  p: input(name="title", value=topic && topic.title)
+
+  p: label(for="summary") Summary:
+  p: textarea(name="summary", value=topic && topic.summary)
+    
+  p: input(type="submit")
